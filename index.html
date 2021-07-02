@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/col.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="row introduce">
+				<div class="col-3 logo">
+					<h1>Portfolio</h1> </div>
+				<div class="col-6">
+					<nav class="menu">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Thông tin</a></li>
+							<li><a href="#">Sản phẩm</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-2 icons">
+					<a href="">
+						<ion-icon name="logo-facebook">A</ion-icon>
+					</a>
+					<a href="">
+						<ion-icon name="logo-instagram">B</ion-icon>
+					</a>
+					<a href="">
+						<ion-icon name="list-outline">C</ion-icon>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="banner-r1" data-rellax-speed="2.5">
+				<!--			<video autoplay muted loop><source src="../BT.06/media/Planetaryy.mp4"></video>-->
+				<div class="row banner-r1-r">
+					<div class="col-12 slider-menu">
+						<div class="s-box">
+							<div class="s-content">
+								<div id="slide-01"><img src="media/img/01.jpg" alt="01"></div>
+								<div id="slide-02"><img src="media/img/02.jpg" alt="02"></div>
+								<div id="slide-03"><img src="media/img/03.jpg" alt="03"></div>
+								<div id="slide-04"><img src="media/img/04.jpg" alt="04"></div>
+								<div id="slide-05"><img src="media/img/05.jpg" alt="05"></div>
+							</div> <a href="#slide-01">1</a> <a href="#slide-02">2</a> <a href="#slide-03">3</a> <a href="#slide-04">4</a> <a href="#slide-05">5</a> </div>
+						<div class="col-12 s-menu-info">
+							<div class="col-11 s-menu-info-set">
+								<h3>Freelance Artist</h3>
+								<div class="col-12 s-menu-info-set-button"> <a href="#" class="button-pla"><h1>Maria A Thu</h1></a> <a href="#" class="button-bro">Lướt xem sản phẩm<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="profile-information" data-rellax-speed="4">
+				<div class="row profile-information-r">
+					<div class="col-12 profile-pics">
+						<div class="row skills-info-r">
+							<div class="col-6 Photoshop">
+									<div class="box-skills-01"><h3>Photoshop</h3><div class="box-meter ps"><div class="box-meter-01"></div></div></div>
+									<div class="Photoshop-icons"><h3>Ps</h3></div>
+							</div>
+							<div class="col-6 Illustrator">
+									<div class="box-skills-02"><h3>Illustrator</h3><div class="box-meter ai"><div class="box-meter-02"></div></div></div>
+									<div class="Illustrator-icons"><h3>Ai</h3></div>
+							</div>
+						</div>
+						<div class="box-profile-pics"><img src="media/img/profile.jpg" alt="profile-pics"></div>
+					</div>
+					<div class="col-12 profile-info">
+						<div class="col-9 profile-title"><h1>Phạm Anh Thư</h1><h3>Freelance 2D Artist</h3></div>
+						<div class="col-12 profile-infomation">
+							<div class="col-4 profile-info-list email">
+								<ion-icon name="mail-outline">A</ion-icon>
+								<a href="mailto">phamanhthu313@gmail.com</a>
+							</div>
+							<div class="col-3 profile-info-list phone">
+								<ion-icon name="phone-portrait-outline">B</ion-icon>
+								<a href="phone">0344.563.755</a>
+							</div>
+							<div class="col-4 profile-info-list address">
+								<ion-icon name="map-outline">C</ion-icon>
+								<a href="https://www.google.com/maps/@10.3513402,107.1029833,595m/data=!3m1!1e3?hl=vi">Thuận An, Tỉnh Bình Dương</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<section id="works-info-01">
+				<div class="row works-info-01-r">
+				 <div class="col-12"></div>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--	ion Icons https://ionic.io/ionicons-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<!--	animae scroll https://michalsnik.github.io/aos/ https://github.com/michalsnik/aos-->
+<script src="css/java/rellax.min.js"></script>
+<script>
+// Also can pass in optional settings block
+var rellax = new Rellax('#profile-information', {
+	speed: -2,
+	center: false,
+	wrapper: null,
+	round: true,
+	vertical: true,
+	horizontal: false
+});
+</script>
+<script>
+// Also can pass in optional settings block
+var rellax = new Rellax('.banner-r1', {
+	speed: -2,
+	center: false,
+	wrapper: null,
+	round: true,
+	vertical: true,
+	horizontal: false
+});
+</script>
+	
+
+</html>
